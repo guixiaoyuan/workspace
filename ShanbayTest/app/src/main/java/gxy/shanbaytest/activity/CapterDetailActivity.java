@@ -4,10 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
-import android.util.Log;
+import android.text.SpannableString;
 import android.widget.TextView;
 
 import gxy.shanbaytest.R;
+import gxy.shanbaytest.tools.PatternTool;
 
 /**
  * Created by gxy on 2015/9/3.
@@ -45,12 +46,13 @@ public class CapterDetailActivity extends Activity {
                         "<p align=\"left\">&nbsp;&nbsp;&nbsp;&nbsp; Fortunately, however, ancient men made tools of stone, especially flint, because this is easier to shape than other kinds. They may also have used wood and skins, but these have rotted away. Stone does not decay, and so the tools of long ago have remained when even the bones of the men who made them have disappeared without trace.</p> \n" +
                         "</body> \n" +
                         "</html> ";
+                SpannableString spannableString = new SpannableString(Html.fromHtml(html));
                 tvCapter.setText("Why are legends handed down by storytellers useful?");
-                tvCapterDetail.setText(Html.fromHtml(html));
+                tvCapterDetail.setText( PatternTool.match(spannableString, " beast "));
+                tvCapterDetail.setText( PatternTool.match(spannableString, " encounter "));
                 break;
             default:
-                tvCapter.setText("Leson else" +
-                        "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd");
+                tvCapter.setText("Leson else");
                 break;
         }
     }
