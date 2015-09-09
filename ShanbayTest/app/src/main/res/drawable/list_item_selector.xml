@@ -3,7 +3,7 @@
     <!-- shapes defined for Android 2.3 drawable issues -->
     <item android:state_pressed="true" >
         <shape android:shape="rectangle">
-            <solid android:color="#cccccc" />
+            <solid android:color="@color/transparentbg" />
         </shape>
     </item>
     <!-- default -->

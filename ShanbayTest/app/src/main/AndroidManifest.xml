@@ -4,12 +4,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@mipmap/shanbay"
+        android:label="扇贝小例子"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/app_name" >
+            android:label="扇贝小例子" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

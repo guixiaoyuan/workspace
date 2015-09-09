@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/material_deep_teal_500"
+        android:text="扇贝"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:textColor="#ffffff"
+        android:textSize="55sp"
+        android:gravity="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ffffff"
+        />
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/main"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/list_item_selector"/>
+
+    <TextView
+        android:id="@+id/courierBring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/bring"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/list_item_selector"/>
+
+    <TextView
+        android:id="@+id/courierTake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/take"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/list_item_selector"/>
+    <TextView
+        android:id="@+id/yanHuo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/yanhuo"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/list_item_selector"/>
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/message"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@drawable/list_item_selector"/>
+
+
+
+</LinearLayout>

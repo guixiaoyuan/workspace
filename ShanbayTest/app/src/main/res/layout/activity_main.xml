@@ -6,11 +6,48 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <gxy.shanbaytest.View.StaggeredGridView
-        android:id="@+id/sg_first_page"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:column_count="2">
-    </gxy.shanbaytest.View.StaggeredGridView>
+        android:background="@color/accent_material_light"
+        android:minHeight="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 内容界面 -->
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <gxy.shanbaytest.View.StaggeredGridView
+                android:id="@+id/sg_first_page"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:column_count="2"></gxy.shanbaytest.View.StaggeredGridView>
+
+        </LinearLayout>
+        <!-- 侧滑菜单内容 -->
+
+        <LinearLayout
+            android:id="@+id/drawer_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/material_blue_grey_900"
+            android:orientation="vertical">
+
+            <include layout="@layout/menu_content" />
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+
 
 </LinearLayout>

@@ -1,7 +1,8 @@
 package gxy.shanbaytest.tools;
 
 
-import android.widget.ImageView;
+
+import android.util.Log;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -46,11 +47,11 @@ public class EnglishText implements Serializable {
     }
 
     public void getData(EnglishText englishText,ArrayList<EnglishText> items){
-        for (int i = 0;i<10;i++){
-            englishText.setCost("10");
-            englishText.setInfo("info");
-            englishText.setSchool("nuist");
-            englishText.setPicture(R.drawable.abc_btn_check_to_on_mtrl_000);
+        for (int i = 1;i<11;i++){
+            englishText.setCost(" The 4th Capter");
+            englishText.setInfo(" New Concept English");
+            englishText.setSchool(" Nuist");
+            englishText.setPicture(R.mipmap.new_english);
             items.add(englishText);
         }
     }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_toolbar">#1279ff</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparentbg">#55ffffff</color>
+    <color name="text_color_gray">#444444</color>
+</resources>

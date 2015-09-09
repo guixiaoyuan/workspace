@@ -1,6 +1,7 @@
 package gxy.shanbaytest.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,11 +65,11 @@ public class SquareGridAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         EnglishText item = items.get(position);
-        //bitmapUtils.display(viewHolder.imgPic, Path.MERCHANDISEIMGPATH+item.getMerchandiseID()+"/thumbnail/"+item.getPicurls().get(0));
         viewHolder.imgPic.setImageResource(item.getPicture());
         viewHolder.tvInfo.setText(item.getInfo());
         viewHolder.tvSchool.setText(item.getSchool());
         viewHolder.tvCost.setText(item.getCost());
+
         return convertView;
     }
 
