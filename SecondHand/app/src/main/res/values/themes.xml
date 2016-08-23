@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="myTheme" parent="android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <!--<item name="android:checkboxStyle">@style/mCheckBox</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>-->
+    </style>
+
+
+
+
+</resources>

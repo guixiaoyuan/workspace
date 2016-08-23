@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    tools:context="com.deeal.exchange.activity.MyAccountActivity">
+
+    <include
+        layout="@layout/title_bar"
+        android:id="@+id/accountTitle"/>
+    <Button
+        android:id="@+id/btWithDraw"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="@string/Withdraw"
+        android:background="@drawable/submit_button_selector"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/btRecharge"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="@string/Recharge"
+        android:background="@drawable/submit_button_selector"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_above="@+id/btWithDraw"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="55sp"
+        android:textColor="#ff0033"
+        android:gravity="center"
+        android:padding="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/accountTitle"
+        android:layout_above="@+id/btRecharge" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footbackground"/>
+</RelativeLayout>

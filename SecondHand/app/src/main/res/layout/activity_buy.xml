@@ -1,0 +1,280 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background_material_light"
+    tools:context="com.deeal.exchange.activity.BuyActivity">
+
+    <LinearLayout
+        android:id="@+id/linl_activity_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <include layout = "@layout/title_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_buy1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/iv_activity_buy"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/text_xiaoguo"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iv_activity_buy"
+            >
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/ivory_background"
+                />
+
+            <TextView
+                android:id="@+id/tv_trade_name_activity_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:text=""
+                />
+
+            <TextView
+                android:id="@+id/tv_goods_fee_activity_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="$0"
+                android:textSize="16sp"
+                android:textColor="@color/red"
+                />
+
+            <TextView
+                android:id="@+id/tv_transport_fee_activity_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="(含运费：0)"
+                android:textSize="10sp"
+                android:textColor="@color/gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_seller_adress_activity_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="20dip"
+        android:background="@color/ivory_background"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_buy2"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="@string/text_address"
+            />
+
+
+        <ImageView
+            android:id="@+id/img_choose_adress_activity_buy"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/btright"
+            />
+
+        <LinearLayout
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_choose_adress_activity_buy"
+            android:layout_marginRight="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_name_phone_activity_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text=""
+                android:textColor="@color/gray"
+                />
+            <TextView
+                android:id="@+id/tv_getgoods_adress_activity_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text=""
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:textColor="@color/gray"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/ivory_background"
+            />
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_buy3"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_help_activity_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="@string/text_inspection_delivery"
+            />
+
+        <CheckBox
+            android:id="@+id/chb_choose_help_activity_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_help_activity_buy"
+            android:layout_alignBottom="@+id/tv_help_activity_buy"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_help_fee_activity_buy"
+            android:layout_marginRight="15dp"
+            android:text="@string/help_fee"
+            />
+
+        <TextView
+            android:id="@+id/tv_help_fee_activity_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="17sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/red"
+            android:text="￥0"
+            />
+
+
+    </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/ivory_background"
+            />
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_buy4"
+        android:gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@color/white"
+        >
+
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="@string/really_pay"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_really_pay_activity_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/red"
+            android:textSize="17sp"
+            />
+
+
+    </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/ivory_background"
+        android:layout_below="@+id/linl_activity_buy"
+        android:layout_above="@+id/linl_sure_activity_buy"
+        />
+    <LinearLayout
+        android:id="@+id/linl_sure_activity_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/white"
+        >
+
+        <Button
+            android:id="@+id/bt_final_ensure_activity_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/sure_button_red"
+            android:text="@string/text_ensure"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

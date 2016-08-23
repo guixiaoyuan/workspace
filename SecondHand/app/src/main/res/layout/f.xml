@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <include layout="@layout/title_bar"
+        android:id="@+id/title" />
+    <FrameLayout
+        android:id="@+id/flMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:layout_above="@+id/bottom"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.1dip"
+    android:layout_above="@+id/bottom"
+    android:background="#dddddd"
+    />
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+        <RelativeLayout
+            android:id="@+id/rlGoFirst"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:id="@+id/imgGoFirst"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/gomain_n"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/tvGoFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_text_firstpage"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imgGoFirst"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlGoSquare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/imgGoSquare"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/gosquare_n"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/tvGoSquare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_text_squarepage"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imgGoSquare"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/rlGoPublish"
+            android:layout_weight="1"
+            >
+            <ImageButton
+                android:id="@+id/imgbtGoPublish"
+                android:layout_centerInParent="true"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/button_selector_publish"
+                android:scaleType="fitCenter"
+                android:layout_margin="3dp"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlGoMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imgGoMessage"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/go_message_n"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/tvGoMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_text_messagepage"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imgGoMessage"/>
+            <TextView
+                android:id="@+id/tvMessageNum"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/red_round"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:layout_alignRight="@id/imgGoMessage"
+                />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlGoMypage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/imgGoMypage"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/go_my_n"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/tvGoMypage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_text_mypage"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imgGoMypage"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

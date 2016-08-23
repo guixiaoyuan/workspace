@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_choose_sex"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/blue_gray"/>
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_gravity="center">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/rbMan" />
+
+        <RadioButton
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="女"
+            android:textSize="20sp"
+            android:id="@+id/rbWoman" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btEnsure"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:background="@drawable/bt_seletor_bluegray"
+        android:text="@string/text_ensure"/>
+
+
+
+
+</LinearLayout>

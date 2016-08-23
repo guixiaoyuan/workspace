@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">再易</string>
+    <string name="Add">添加</string>
+    <string name="Balance">￥5.20</string>
+    <string name="Consignee">收货人</string>
+    <string name="Consignee_two">收货人：</string>
+    <string name="DeliveryAddress">收货地址</string>
+    <string name="ExpressCompany">快递公司：</string>
+    <string name="ExpressNumber">快递编号：</string>
+    <string name="guide_text_application_name">再易</string>
+    <string name="guide_text_taste">立即体验</string>
+    <string name="bottom_text_firstpage">首页</string>
+    <string name="error_phone_code">验证码不能为空</string>
+    <string name="error_pwd_new_sure">请输入确认密码！</string>
+    <string name="title_activity_lanucher">LanucherActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bottom_text_squarepage">广场</string>
+    <string name="bottom_text_messagepage">消息</string>
+    <string name="bottom_text_mypage">我的</string>
+    <string name="mypublish">我的发布</string>
+    <string name="myneed">我的需求</string>
+    <string name="really_pay">实付金额</string>
+    <string name="MyAccount">账户</string>
+    <string name="mycollection">我的收藏</string>
+    <string name="mysold">我卖出的</string>
+    <string name="mybought">我买到的</string>
+    <string name="mywallet">钱包</string>
+    <string name="help_fee">赏钱</string>
+    <string name="Recharge">充值</string>
+    <string name="Withdraw">提现到支付宝</string>
+    <string name="ShippingAddress">送货地址</string>
+    <string name="time">相约何时</string>
+    <string name="thing">请点击选择上门服务日期</string>
+    <string name="thing2">请点击选择具体服务时间</string>
+    <string name="TakeAddress">拿货地址</string>
+    <string name="pay">支付</string>
+    <string name="contact">联系客服</string>
+    <string name="consignee">收货人</string>
+    <string name="phonenumber">手机号码</string>
+    <string name="province">省份</string>
+    <string name="city">城市</string>
+    <string name="area">地区</string>
+    <string name="address">详细地址</string>
+    <string name="postalcode">邮政编码</string>
+    <string name="setting">设置</string>
+    <string name="courierserve">快递服务</string>
+    <string name="text_userhead">头像</string>
+    <string name="text_sex">性别</string>
+    <string name="text_age">年龄</string>
+    <string name="text_nickname">昵称</string>
+    <string name="text_home">常住</string>
+    <string name="text_intro">简介</string>
+    <string name="text_address">收货地址</string>
+    <string name="text_eletric">电子产品</string>
+    <string name="text_book">书籍旧刊</string>
+    <string name="text_transpot">交通工具</string>
+    <string name="text_courierserve">快递服务</string>
+    <string name="text_inspection_delivery">快派出小二去验货并发货</string>
+    <string name="text_costemes">彩妆护肤</string>
+    <string name="setdefault">设为默认地址</string>
+    <string name="release_demand">发布需求</string>
+    <string name="submit">提交</string>
+    <string name="example">我需要一个8成新的手机</string>
+    <string name="tvTitle">标题</string>
+    <string name="btRight">右上按钮</string>
+    <!--服务信息-->
+    <string name="ServiceInformation">服务信息</string>
+    <string name="tvLogisticsCompany">物流公司</string>
+    <string name="commodityDetail">详情</string>
+    <string name="MycommodityDetail">订单详情</string>
+    <string name="delete">删除</string>
+    <string name="add_address">添加地址</string>
+    <string name="tvLogisticsNumber">物流单号</string>
+    <string name="btLogistics">提交</string>
+    <string name="ServiceNumber">服务编号：</string>
+    <string name="tbServiceNumber">312154654879</string>
+    <string name="tvExpressCompany">韵达快递</string>
+    <string name="tvExpressNumber">456788794</string>
+    <string name="sender">寄件人</string>
+    <string name="tvSender">cherry</string>
+    <string name="phoneNum">18251957360</string>
+    <string name="RecipientCity">收件城市</string>
+    <string name="tvRecipientCity">南京市</string>
+    <string name="overweight">是否超重</string>
+    <string name="tvOverweight">否</string>
+    <string name="pickAddress">取件地址</string>
+    <string name="tvPickAddress">南京市什么什么</string>
+    <string name="tvDeliveryAddress">南京市什么什么鬼</string>
+    <string name="Issuer">发布人：</string>
+    <string name="tvConsignee">andy</string>
+    <string name="write_number">填写单号</string>
+    <string name="edit_address">编辑地址</string>
+    <string name="save_address">保存</string>
+    <string name="courier_company">快递公司</string>
+    <string name="college">学校</string>
+    <string name="courier_take">快递代发</string>
+    <string name="courier_bring">快递代拿</string>
+    <string name="release">发布</string>
+    <string name="text_cloth">鞋包服饰</string>
+    <string name="text_goods">日用百货</string>
+    <string name="text_others">其它</string>
+    <string name="take_goods">上门取件</string>
+    <string name="title_commodity">商品列表</string>
+    <string name="details_commodity">商品详情</string>
+    <string name="MyNeed">我需求的</string>
+    <string name="title_myinfomation">我的资料</string>
+    <string name="login">登录</string>
+    <string name="im_login">登录聊天系统</string>
+    <string name="register">注册</string>
+    <string name="userName">用户名：您的手机号</string>
+    <string name="userPwd">密码</string>
+    <string name="rem_pwd">记住密码</string>
+    <string name="firm_pwd">确认密码</string>
+    <string name="check_logistics">查看物流</string>
+    <string name="firm_get_goods">确认收货</string>
+    <string name="agreement">同意注册协议</string>
+    <string name="phonecode">请输入验证码</string>
+    <string name="hint_edit_nickname">请输入您的昵称</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="share_desc">分享什么呢</string>
+    <string name="agreement_name">用户注册协议</string>
+    <string name="error_agreement">请阅读用户协议条款并同意!</string>
+    <string name="setting_user_info">个人信息</string>
+    <string name="text_choose_sex">选择性别</string>
+    <string name="text_choose_photo">选择头像</string>
+    <string name="text_edit_nickname">编辑昵称</string>
+    <string name="text_edit_intro">个人简介</string>
+    <string name="text_edit_home">常住地址</string>
+    <string name="text_ensure">确认</string>
+    <string name="setting_pwd">修改密码</string>
+    <string name="modify_pwd_name">修改密码</string>
+    <string name="user_pwd">旧密码</string>
+    <string name="user_newpwd">新密码</string>
+    <string name="user_newpwd2">确认新密码</string>
+    <string name="user_phone_code">获取验证码</string>
+    <string name="get_phone_code">验证码</string>
+    <string name="error_name">请输入用户名！</string>
+    <string name="error_name_length1">用户名长度不能少于3个字符</string>
+    <string name="error_name_length2">用户名长度不能超过20个字符</string>
+    <string name="error_name_expr">只能输入字母或数字</string>
+    <string name="error_pwd">请输入密码！</string>
+    <string name="error_pwd_match">两次密码输入不一致！</string>
+    <string name="error_pwd_length1">密码长度不能少于6个字符</string>
+    <string name="error_pwd_length2">密码长度不能超过20个字符</string>
+    <string name="error_pwd_expr">密码只能是字母和数字</string>
+    <string name="error_pwd_old">请输入旧密码！</string>
+    <string name="error_pwd_new">请输入新密码！</string>
+    <string name="error_phone">请输入手机号码！</string>
+    <string name="error_phone_expr">手机格式不正确!</string>
+    <string name="error_phone_expr2">手机不能输入中文!</string>
+    <string name="error_phone_code_expr">验证码只能是数字</string>
+    <string name="error_nickname">请输入昵称！</string>
+    <string name="error_nickname_length1">昵称长度不能少于3个字符</string>
+    <string name="error_nickname_length2">昵称长度不能超过20个字符</string>
+    <string name="error_nickname_expr">昵称格式不正确</string>
+    <string name="text_talk">联系卖家</string>
+    <string name="text_talk_buy">联系买家</string>
+    <string name="text_wanttosell">想卖</string>
+    <string name="text_orginal_cost">原价</string>
+    <string name="text_yunfei">运费</string>
+    <string name="text_type">分类</string>
+    <string name="text_select_type">请选择分类</string>
+    <string name="text_change">物物交换</string>
+    <string name="text_tuijian">精品推荐</string>
+    <string name="text_pipei">匹配卖货</string>
+    <string name="text_yanhuo">第三方验货</string>
+    <string name="text_title">标题</string>
+    <string name="text_describe">请描述一下您的商品</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="agreement_desc">                    提醒：本程序是一款Android学习产品，使用本程序即同意如下条款。
+        \n1、服务修订
+		\n本程序所有者保留随时修改或中断服务而不需通知用户的权利。
+		\n2、用户隐私制度
+		\n尊重用户个人隐私是本公司的一项基本政策。本公司一定不会在用户不允许的情况下公开、或透露用户的注册资料。
+		\n3、用户的帐号、密码和安全性
+		\n如果您未保管好自己的帐号和密码而对您或第三方造成的损害，责任由用户个人承担。
+		\n4、拒绝提供担保和免责声明
+		\n用户明确同意使用本项服务的风险由用户个人承担。服务提供是建立在免费的基础上。本公司不提供任何类型的担保。
+		\n5、用户管理
+		\n用户单独承担发布内容的责任。用户对服务的使用是根据所有适用于服务的地方法律、国家法律和国际法律标准的。
+		\n6、通告
+		\n所有发给用户的通告都可通过电子邮件或常规的信件传送。  </string>
+    <string name="text_checkupdate">检查更新</string>
+    <string name="text_logout">退出账号</string>
+
+
+    <drawable name="submit_normal">#0099CC</drawable>
+    <drawable name="submit_pressed">#ff186c89</drawable>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_crop_image">CropImageActivity</string>
+    <string name="title_activity_enter">EnterActivity</string>
+    <string name="title_activity_image_view">ImageViewActivity</string>
+    <string name="connectTokefu">联系我们</string>
+    <string name="text_about">关于</string>
+    <string name="title_activity_custom_service">CustomServiceActivity</string>
+    <string name="text_location">正在定位</string>
+    <string name="citylist">城市列表</string>
+    <string-array name="logistics_status">
+        <item>待查询</item>
+        <item>查询异常</item>
+        <item>暂无记录</item>
+        <item>在途中</item>
+        <item>派送中</item>
+        <item>已签收</item>
+        <item>用户拒签</item>
+        <item>疑难件</item>
+        <item>无效单</item>
+        <item>超时单</item>
+        <item>签收失败</item>
+        <item>退回</item>
+    </string-array>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="go_pay">去付款</string>
+    <string name="err_search_nothing">对不起没有搜索到任何商品</string>
+    <string name="title_activity_abort">AbortActivity</string>
+    <string name="abort">注册协议须知：\n
+请务必认真阅读和理解本《用户服务协议》（以下简称《协议》）中规定的所有权利和限制。除非您接受本《协议》条款，否则您无权注册、登录或使用本协议所涉及的相关服务。您一旦注册、登录、使用或以任何方式使用本《协议》所涉及的相关服务的行为将视为对本《协议》的接受，即表示您同意接受本《协议》各项条款的约束。如果您不同意本《协议》中的条款，请不要注册、登录或使用本《协议》相关服务。 本《协议》是用户与南京一尺布网络科技有限公司之间（以下简称再易科技）的法律协议。
+\n1. 服务内容
+\n1.1再易科技是一个第三方验货的二手交易平台以及提供相关的快递服务平台。
+\n1.2 您一旦注册成功成为用户，您将得到一个密码和帐号，您需要对自己在帐户中的所有活动和事件负全责。如果由于您的过失导致您的帐号和密码脱离您的控制，则由此导致的针对您、或任何第三方造成的损害，您将承担全部责任。
+\n1.3 用户理解并接受，再易科技仅提供相关的网络服务，除此之外与相关网络服务有关的设备（如个人电脑、手机、及其他与接入互联网或移动互联网有关的装置）及所需的费用（如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费）均应由用户自行负担。
+\n\n2. 用户使用规则
+\n2.1 用户在申请使用再易科技平台中服务时，必须向再易科技提供准确的信息，如收货地址，绑定的支付宝账号等等。因用户提供个人资料不准确、不真实而引发的一切后果由用户承担。
+\n2.2 用户应妥善保存帐号、密码，避免以任何脱离用户控制的形式交由他人使用。如用户发现其帐号遭他人非法使用，应立即通知再易科技。因黑客行为或用户的保管疏忽导致帐号、密码遭他人非法使用，再易科技不承担任何责任。
+\n2.3 用户应当为自身注册帐户下的一切行为负责，因用户行为而导致的用户自身或其他任何第三方的任何损失或损害，再易科技不承担责任。
+\2.4 用户理解并接受再易科技提供的服务中可能包括广告，用户同意在使用过程中显示再易科技和第三方供应商、合作伙伴提供的广告。
+\n2.5 用户在使用再易科技网络服务过程中，必须遵循以下原则：
+\n2.5.1 遵守中国有关的法律和法规；
+\n2.5.2 遵守所有与网络服务有关的网络协议、规定和程序；
+\n2.5.3 不得为任何非法目的而使用网络服务系统；
+\n2.5.4 不得利用再易科技网络服务系统进行任何可能对互联网或移动网正常运转造成不利影响的行为；
+\n2.5.5 不得利用再易科技提供的网络服务上传、展示或传播任何虚假的、骚扰性的、中伤他人的、辱骂性的、恐吓性的、庸俗淫秽的或其他任何非法的信息资料；
+\n2.5.6 不得侵犯再易科技和其他任何第三方的专利权、著作权、商标权、名誉权或其他任何合法权益；
+\n2.5.6 不得侵犯再易科技和其他任何第三方的专利权、著作权、商标权、名誉权或其他任何合法权益；
+\n2.5.7 不得利用再易科技网络服务系统进行任何不利于再易科技的行为；
+\n2.5.8 如发现任何非法使用用户帐号或帐号出现安全漏洞的情况，应立即通告再易科技。
+\n2.6 如用户在使用网络服务时违反任何上述规定，再易科技或其授权的人有权要求用户改正或直接采取一切必要的措施（包括但不限于更改或删除用户收藏的内容等、暂停或终止用户使用网络服务的权利）以减轻用户不当行为造成的影响。
+\n\n3. 服务变更、中断或终止
+\n3.1 鉴于网络服务的特殊性，用户同意再易科技有权根据业务发展情况随时变更、中断或终止部分或全部的网络服务而无需通知用户，也无需对任何用户或任何第三方承担任何责任；
+\n3.2 用户理解，再易科技需要定期或不定期地对提供网络服务的平台（如互联网网站、移动网络等）或相关的设备进行检修或者维护，如因此类情况而造成网络服务在合理时间内的中断，再易科技无需为此承担任何责任，但再易科技应尽可能事先进行通告。
+\n3.3 如发生下列任何一种情形，再易科技有权随时中断或终止向用户提供本《协议》项下的网络服务（包括收费网络服务）而无需对用户或任何第三方承担任何责任：
+\n3.3.1 用户提供的服务信息不真实；
+\n3.3.2 用户违反本《协议》中规定的使用规则。
+\n\n4. 知识产权
+\n4.1 提供的网络服务中包含的任何文本、图片、图形、音频和/或视频资料均受版权、商标和/或其它财产所有权法律的保护，未经相关权利人同意，上述资料均不得用于任何商业目的。
+\n\n5. 隐私保护
+\n5.1 保护用户隐私是再易科技的一项基本政策，再易科技保证不对外公开或向第三方提供单个用户的注册资料及用户在使用网络服务时存储在再易科技的非公开内容，但下列情况除外：
+\n5.1.1 事先获得用户的明确授权；
+\n5.1.2 根据有关的法律法规要求；
+\n5.1.3 按照相关政府主管部门的要求；
+\n5.1.4 为维护社会公众的利益；
+\n5.1.5 为维护再易科技的合法权益。
+\n5.2 再易科技可能会与第三方合作向用户提供相关的网络服务，在此情况下，如该第三方同意承担与再易科技同等的保护用户隐私的责任，则再易科技有权将用户的注册资料等提供给该第三方。
+\n5.3 在不透露单个用户隐私资料的前提下，再易科技有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。
+\n5.4 再易科技制定了以下四项隐私权保护原则，指导我们如何来处理产品中涉及到用户隐私权和用户信息等方面的问题：
+\n（1） 利用我们收集的信息为用户提供有价值的产品和服务。
+\n（2） 开发符合隐私权标准和隐私权惯例的产品。
+\n（3） 将个人信息的收集透明化，并由权威第三方监督。
+\n（4） 尽最大的努力保护我们掌握的信息。
+\n\n6. 免责声明
+\n6.1 再易科技不担保网络服务一定能满足用户的要求，也不担保网络服务不会中断，对网络服务的及时性、安全性、准确性也都不作担保。
+\n6.2对于因电信系统或互联网网络故障、计算机故障或病毒、信息损坏或丢失、计算机系统问题或其它任何不可抗力原因而产生损失，再易科技不承担任何责任，但将尽力减少因此而给用户造成的损失和影响。
+\n6.3 对于快递服务，若是由我方代拿，在确定由我方拿到快递包裹的前提下，快递丢失，调查后系我方工作人员责任，则由我方赔偿。若发生无中生有等诈骗行为，需要负法律责任。若由我方代发快递，快递包裹丢失，我方会与快递公司协商赔偿事宜。
+\n6.4 对于验货服务，由我方验货后，给用户发出一个公正公平的验货反馈。用户若是想退货请自行与卖家联系协商，本平台无退货服务。
+\n6.5本平台致力于做一个诚信有规范的平台。用户在没有选择我方的验货服务而进行购买任何商品出现问题都与再易科技无关。
+\n\n7. 法律及争议解决
+\n7.1 本协议适用中华人民共和国法律。
+\n7.2 因本协议引起的或与本协议有关的任何争议，各方应友好协商解决；协商不成的，任何一方均可将有关争议提交至北京仲裁委员会并按照其届时有效的仲裁规则仲裁；仲裁裁决是终局的，对各方均有约束力。
+\n8.2 再易科技有权随时根据有关法律、法规的变化以及公司经营状况和经营策略的调整等修改本协议，而无需另行单独通知用户。用户可随时通过网站浏览最新服务协议条款。当发生有关争议时，以最新的协议文本为准。如果不同意再易科技对本协议相关条款所做的修改，用户有权停止使用网络服务。如果用户继续使用网络服务，则视为用户接受再易科技对本协议相关条款所做的修改。
+/n8.3 再易科技在法律允许最大范围对本协议拥有解释权与修改权。
+</string>
+    <string name="text_want_buy">我想要</string>
+    <string name="TakeTime">到达时间</string>
+    <string name="Take">请输入快递到达时间</string>
+    <string-array name="isoverweight">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+    <string name="tb_munion_tip_download_prefix">正在下载:</string>
+    <string name="loading">正在加载</string>
+    <string name="school">学校</string>
+    <string name="cities">城市</string>
+    <string name="MerchandiseType">类型</string>
+</resources>

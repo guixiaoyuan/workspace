@@ -1,0 +1,408 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deeal.exchange.fragment.MyPageFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlGoUserInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_layout_seletor"
+                android:clickable="true"
+                android:padding="5dp"
+                >
+
+                <com.deeal.exchange.view.CircleImageView
+                    android:id="@+id/imgUserHead"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgUserHead"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tvUserIntroduction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxEms="20" />
+                </LinearLayout>
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/btright" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGoMyPublish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_layout_seletor"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgGoMyPublish"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/mypublish" />
+
+                <TextView
+                    android:id="@+id/tvGoMyPublish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgGoMyPublish"
+                    android:text="@string/mypublish" />
+
+                <ImageView
+                    android:id="@+id/imgbtGoMyPublish"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@mipmap/btright" />
+
+                <TextView
+                    android:id="@+id/tvMyPublishNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgbtGoMyPublish" />
+            </RelativeLayout>
+
+            <include layout="@layout/dividerview_grayline" />
+
+            <RelativeLayout
+                android:id="@+id/rlGoMySold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_layout_seletor"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgGoMySold"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/mysold" />
+
+                <TextView
+                    android:id="@+id/tvGoMySold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgGoMySold"
+                    android:text="@string/mysold" />
+
+                <ImageView
+                    android:id="@+id/imgbtGoMySold"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@mipmap/btright" />
+
+                <TextView
+                    android:id="@+id/tvMySoldNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgbtGoMySold" />
+            </RelativeLayout>
+
+            <include layout="@layout/dividerview_grayline" />
+
+            <RelativeLayout
+                android:id="@+id/rlGoMyBought"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_layout_seletor"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgGoMyBought"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/mybought" />
+
+                <TextView
+                    android:id="@+id/tvGoMyBought"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgGoMyBought"
+                    android:text="@string/mybought" />
+
+                <ImageView
+                    android:id="@+id/imgbtGoMyBought"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/btright" />
+
+                <TextView
+                    android:id="@+id/tvMyBoughtNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgbtGoMyBought" />
+            </RelativeLayout>
+
+            <include layout="@layout/dividerview_grayline" />
+
+            <RelativeLayout
+                android:id="@+id/rlGoMyNeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_layout_seletor"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgGoMyNeed"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/myneed" />
+
+                <TextView
+                    android:id="@+id/tvGoMyNeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgGoMyNeed"
+                    android:text="@string/myneed" />
+
+                <ImageView
+                    android:id="@+id/imgbtGoMyNeed"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@mipmap/btright" />
+
+                <TextView
+                    android:id="@+id/tvMyNeedNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgbtGoMyNeed" />
+            </RelativeLayout>
+
+            <include layout="@layout/dividerview_grayline" />
+
+            <RelativeLayout
+                android:id="@+id/rlGoCourierserve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_layout_seletor"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgGoCourierserve"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/mycourierserve" />
+
+                <TextView
+                    android:id="@+id/tvGoCourierserve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgGoCourierserve"
+                    android:text="@string/courierserve" />
+
+                <ImageView
+                    android:id="@+id/imgbtGoCourierserve"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@mipmap/btright" />
+
+                <TextView
+                    android:id="@+id/tvCourierserveNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgbtGoCourierserve" />
+            </RelativeLayout>
+
+            <include layout="@layout/dividerview_grayline" />
+
+            <RelativeLayout
+                android:id="@+id/rlGoMyCollection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_layout_seletor"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgGoMyCollection"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/mycollection" />
+
+                <TextView
+                    android:id="@+id/tvGoMyCollection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgGoMyCollection"
+                    android:text="@string/mycollection" />
+
+                <ImageView
+                    android:id="@+id/imgbtGoMyCollection"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@mipmap/btright" />
+
+                <TextView
+                    android:id="@+id/tvMyCollectionNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgbtGoMyCollection" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGoMyWallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_layout_seletor"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgGoMyWallet"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/mywallet" />
+
+                <TextView
+                    android:id="@+id/tvGoMyWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgGoMyWallet"
+                    android:text="@string/mywallet" />
+
+                <ImageView
+                    android:id="@+id/imgbtGoMyWallet"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@mipmap/btright" />
+
+                <TextView
+                    android:id="@+id/tvMyWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgbtGoMyWallet" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGoSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_layout_seletor"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgGoSetting"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/setting" />
+
+                <TextView
+                    android:id="@+id/tvGoSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imgGoSetting"
+                    android:text="@string/setting"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/imgbtGoSetting"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@mipmap/btright" />
+
+                <TextView
+                    android:id="@+id/tvSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/imgbtGoSetting" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

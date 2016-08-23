@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_material_light"
+    tools:context="com.deeal.exchange.activity.FindPwdActivity">
+
+    <include layout="@layout/title_bar"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <RelativeLayout
+            android:id="@+id/rl_find_pwd1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <EditText
+                android:id="@+id/et_phone_find_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="@string/userName"
+                android:singleLine="true"
+                android:numeric="integer"
+                android:maxLength="11"
+                android:lines="1"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:paddingBottom="10dp"
+                />
+
+            <ImageButton
+                android:id="@+id/ib_phone_find_pwd"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/clear_icon"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_find_pwd2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <EditText
+                android:id="@+id/et_code_find_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/get_phone_code"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:maxLength="6"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                android:paddingBottom="10dp"
+                android:layout_toLeftOf="@+id/bt_GetCode_find_pwd"
+                />
+
+            <Button
+                android:id="@+id/bt_GetCode_find_pwd"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/user_phone_code"
+                android:layout_alignBottom="@+id/et_code_find_pwd"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_find_pwd3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <EditText
+                android:id="@+id/et_new_pwd_find_pew"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:hint="@string/user_newpwd"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingBottom="10dp"
+                android:textColor="@color/gray"
+                android:textSize="18sp"
+                />
+
+            <ImageButton
+                android:id="@+id/iv_new_pwd_find_pwd"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"
+                android:background="@color/gray"
+                android:visibility="invisible"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_find_pwd4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <EditText
+                android:id="@+id/et_firm_pwd_find_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/firm_pwd"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:paddingBottom="10dp"
+                />
+
+            <ImageButton
+                android:id="@+id/iv_firm_pwd_find_pwd"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/clear_icon"
+                android:visibility="invisible"
+                />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_ensure_find_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/text_ensure"
+            android:background="@drawable/button_selector_blue"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

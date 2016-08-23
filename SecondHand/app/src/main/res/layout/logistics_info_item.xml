@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="60dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="12dip"
+        >
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:background="@color/gray"
+            android:layout_centerHorizontal="true"
+
+            />
+        <ImageView
+            android:id="@+id/imv_sport"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginTop="-7dip"
+            android:src="@drawable/spot_logistics_gray"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_logistics_detail_logistics_info_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dip"
+            android:textSize="16sp"
+            />
+        <TextView
+            android:id="@+id/tv_logistics_time_logistics_info_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:layout_marginRight="6dip"
+            android:textSize="16sp"
+            android:layout_below="@+id/tv_logistics_detail_logistics_info_item"
+            />
+        <View
+            android:id="@+id/vi_info1"
+            android:layout_width="fill_parent"
+            android:layout_height="12dip"
+            android:layout_below="@+id/tv_logistics_time_logistics_info_item"
+            />
+        <View
+            android:id="@+id/vi_info2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginRight="6dip"
+            android:background="@color/ivory_background"
+            android:layout_below="@+id/vi_info1"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="12dip"
+            android:layout_below="@+id/vi_info2"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

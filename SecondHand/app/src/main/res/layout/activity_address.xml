@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_material_light"
+        tools:context="com.deeal.exchange.activity.AddressActivity">
+
+        <include
+            android:id="@+id/address_title"
+            layout="@layout/title_bar" />
+
+        <com.deeal.exchange.view.swipemenulistview.SwipeMenuListView
+            android:id="@+id/lvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/address_title" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/nothing" />
+
+    <com.deeal.exchange.view.loadingview.LoadingView
+        android:id="@+id/loadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:loadingText="加载中..." />
+</FrameLayout>

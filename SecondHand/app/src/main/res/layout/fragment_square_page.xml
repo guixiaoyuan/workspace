@@ -1,0 +1,71 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deeal.exchange.fragment.SquarePageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@mipmap/square_title">
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spinnerPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spinnerSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|top"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        <com.ab.view.pullview.AbPullToRefreshView
+            android:id="@+id/ptrSquare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.deeal.exchange.view.StaggeredGridView
+                android:id="@+id/sgSquare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:column_count="2">
+            </com.deeal.exchange.view.StaggeredGridView>
+        </com.ab.view.pullview.AbPullToRefreshView>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    tools:context="com.deeal.exchange.activity.EditAddressActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rlConsignee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/tvSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sender"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="30dp" />
+
+        <EditText
+            android:id="@+id/etSender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/tvSender"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/phonenumber"
+            android:layout_marginRight="12dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:phoneNumber="true"
+            android:layout_toRightOf="@+id/tvPhoneNumber"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProvince"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/tvCourierCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/college"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48dp" />
+
+        <Spinner
+            android:id="@+id/snCollege"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvCourierCompany"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:layout_centerVertical="true"></Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/tvRecipientCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/RecipientCity"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp" />
+
+        <Spinner
+            android:id="@+id/snRecipientCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvRecipientCity"
+            android:layout_centerVertical="true"></Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/tvOverweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overweight"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp" />
+
+        <Spinner
+            android:id="@+id/Overweight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvOverweight"
+            android:layout_centerVertical="true"></Spinner>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/tvpickAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pickAddress"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginRight="12dp"
+            />
+
+        <EditText
+            android:id="@+id/etpickAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvpickAddress"
+            android:lines="2"
+            android:gravity="top"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginRight="12dp"
+            android:text="@string/time"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llTime"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/Time">
+            <EditText
+                android:id="@+id/etDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/thing"
+                android:textSize="18sp"
+                android:editable="false"/>
+            <EditText
+                android:id="@+id/etTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/thing2"
+                android:textSize="18sp"
+                android:layout_marginTop="4dp"
+                android:editable="false"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btCourierTake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:text="@string/btLogistics"
+        android:background="@drawable/submit_button_selector" />
+
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <View
+        android:id="@+id/vi_need1"
+        android:layout_width="fill_parent"
+        android:layout_height="12dip"/>
+    <TextView
+        android:id="@+id/tv_need_content_my_need_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vi_need1"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:text=""
+        />
+    <Button
+        android:id="@+id/bt_delete_my_need_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:layout_below="@+id/tv_need_content_my_need_item"
+        android:layout_alignParentRight="true"
+        android:textSize="13sp"
+        android:focusable="false" />
+    <View
+        android:id="@+id/vi_need2"
+        android:layout_width="fill_parent"
+        android:layout_height="6dip"
+        android:layout_below="@+id/bt_delete_my_need_item"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/ivory_background"
+        android:layout_below="@+id/vi_need2"
+        />
+
+</RelativeLayout>

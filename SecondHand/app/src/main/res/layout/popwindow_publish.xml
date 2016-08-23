@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_publish_d"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:padding="15dp">
+
+        <GridLayout
+            android:id="@+id/gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlGoPublishMerchandise"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="30dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/list_item_selector">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btPublishMerchandise"
+                    android:background="@mipmap/imgpublishmerchandise" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btPublishMerchandise"
+                    android:layout_centerHorizontal="true"
+                    android:text="发布二手"
+                    android:textColor="@color/blue"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGoPublishNeed"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/list_item_selector">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btPublishNeed"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/imgpublishneed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btPublishNeed"
+                    android:layout_centerHorizontal="true"
+                    android:text="发布需求"
+                    android:textColor="#7FC169"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGoPublishcourierbring"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/list_item_selector"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btPublishcourierbring"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/publishcourierbring" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btPublishcourierbring"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#E968A1"
+                    android:text="快递代拿" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlGoPublishcouriertake"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/list_item_selector"
+                android:layout_marginLeft="30dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/btPublishcouriertake"
+                    android:layout_centerHorizontal="true"
+                    android:background="@mipmap/publishcouriertake" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btPublishcouriertake"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#EF9049"
+                    android:text="快递代发" />
+            </RelativeLayout>
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background_material_light"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" />
+
+    <Button
+        android:id="@+id/btCourierBring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/courier_bring" />
+
+    <Button
+        android:id="@+id/btCourierTake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/take_goods" />
+</RelativeLayout>

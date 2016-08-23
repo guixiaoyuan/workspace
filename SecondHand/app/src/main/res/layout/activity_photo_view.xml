@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deeal.exchange.activity.PhotoViewActivity"
+    android:background="@color/black">
+
+   <com.deeal.exchange.view.photoview.PhotoView
+       android:id="@+id/imgPhoto"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+
+</RelativeLayout>

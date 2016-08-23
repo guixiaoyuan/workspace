@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="选择主题"
+        android:padding="4dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/blue"/>
+
+    <RadioGroup
+        android:id="@+id/rgColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbDefalut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经典蓝"/>
+        <RadioButton
+            android:id="@+id/rbPink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="青春粉"/>
+        <RadioButton
+            android:id="@+id/rbDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酷炫黑"/>
+    </RadioGroup>
+    <Button
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/submit_button_selector"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:id="@+id/btEnsure"/>
+</LinearLayout>

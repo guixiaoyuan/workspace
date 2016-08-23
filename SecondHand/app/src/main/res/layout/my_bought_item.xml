@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/rl_my_bought_item1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imv_my_bought_item"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/text_xiaoguo" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_name_my_bought_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:text="商品名"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_goods_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="$100"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_old_price_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_goods_money"
+                android:layout_margin="4dip"
+                android:layout_toRightOf="@+id/tv_goods_money"
+                android:text="原价:￥100"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/tv_goods_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="4dp"
+                android:text="商品交易状态"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llConnect2Seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:clickable="true"
+            android:background="@drawable/list_item_selector">
+
+            <ImageView
+                android:id="@+id/imv_contace_customer"
+                android:layout_width="23dip"
+                android:layout_height="23dip"
+                android:src="@drawable/contact_customer_service" />
+
+            <TextView
+                android:id="@+id/tv_contace_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/text_talk"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/bt_my_bought1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/check_logistics"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:textColor="@color/white"
+                android:background="@drawable/submit_button_selector"/>
+
+            <Button
+                android:id="@+id/bt_my_bought2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/firm_get_goods"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:textColor="@color/white"
+                android:layout_margin="4dp"
+                android:background="@drawable/submit_button_selector"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
